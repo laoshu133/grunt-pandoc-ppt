@@ -2,7 +2,7 @@
 
 ## 什么是 pandoc
 
-先看官网，http://johnmacfarlane.net/pandoc/，英文不懂？看页面下面的图就好了
+先看官网，[http://johnmacfarlane.net/pandoc/](http://johnmacfarlane.net/pandoc/)，英文不懂？看页面下面的图就好了
 
 百度百科：
 > Pandoc是由John MacFarlane开发的标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。
@@ -20,6 +20,7 @@
 1. 安装 pandoc
 
     http://johnmacfarlane.net/pandoc/installing.html
+
     如果 mac 有安装brew，举例：
 
     ```
@@ -75,7 +76,7 @@
         grunt.loadNpmTasks('grunt-pandoc-ppt');
 
         // 声明别名
-        grunt.registerTask('default', ['pandoc']);
+        grunt.registerTask('default', ['pandoc', 'watch']);
     };
     ```
 
@@ -86,6 +87,8 @@
     ```
 
     然后开始愉快的写 PPT 吧 :D
+
+    一个简单的 [PPT例子](https://raw.githubusercontent.com/laoshu133/grunt-pandoc-ppt/master/test/test.md)
 
 
 ## 配置参数
