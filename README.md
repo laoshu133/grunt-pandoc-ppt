@@ -30,8 +30,7 @@
 2. 配置 pandoc 目录
 
     ```
-    mkdir pandoc && cd pandoc
-    mkdir ppt
+    mkdir ppt && cd ppt
     ```
 
 3. 安装 grunt, grunt-pandoc-ppt
@@ -63,17 +62,22 @@
                 htmlPPT: {
                     files: [{
                         expand: true,
-                        cwd: 'ppt/',
+                        cwd: './',
                         src: '*.md',
-                        dest: 'ppt/',
+                        dest: './',
                         ext: '.html'
                     }]
                 }
+            },
+            watch: {
+                files: ['*.md'],
+                tasks: ['pandoc']
             }
         });
 
         // 载入任务
         grunt.loadNpmTasks('grunt-pandoc-ppt');
+        grunt.loadNpmTasks('grunt-contrib-watch');
 
         // 声明别名
         grunt.registerTask('default', ['pandoc', 'watch']);
