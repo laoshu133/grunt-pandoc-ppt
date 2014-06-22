@@ -1,5 +1,5 @@
 {
-  "name": "grunt-pandoc",
+  "name": "grunt-pandoc-ppt",
   "version": "0.0.1",
   "description": "A grunt plugin for pandoc",
   "main": "grunt",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/laoshu133/grunt-pandoc.git"
+    "url": "https://github.com/laoshu133/grunt-pandoc-ppt.git"
   },
   "keywords": [
     "grunt",
@@ -19,9 +19,9 @@
   "author": "laoshu133",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/laoshu133/grunt-pandoc/issues"
+    "url": "https://github.com/laoshu133/grunt-pandoc-ppt/issues"
   },
-  "homepage": "https://github.com/laoshu133/grunt-pandoc",
+  "homepage": "https://github.com/laoshu133/grunt-pandoc-ppt",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0"
