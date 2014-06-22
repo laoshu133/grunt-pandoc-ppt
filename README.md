@@ -1,4 +1,4 @@
-# grunt-pandoc
+# grunt-pandoc-ppt
 
 ## 什么是 pandoc
 
@@ -13,7 +13,7 @@
 
 并且借助 `grunt-contrib-watch` 插件，可以省去手动编译，达到实时预览的效果；
 
-目前版本参数尚不完善，默认参数仅支持 **Markdown => html幻灯片**，欢迎一起推送代码
+目前版本参数尚不完善，默认参数仅支持 **Markdown => html幻灯片(PPT)**，欢迎一起推送代码
 
 ## 怎么玩
 
@@ -30,12 +30,13 @@
 
     ```
     mkdir pandoc && cd pandoc
+    mkdir ppt
     ```
 
-3. 安装 grunt, grunt-pandoc
+3. 安装 grunt, grunt-pandoc-ppt
 
     ```
-    npm install grunt grunt-pandoc grunt-contrib-watch
+    npm install grunt grunt-pandoc-ppt grunt-contrib-watch
     ```
 
 4. 创建 Gruntfile.js
@@ -71,7 +72,7 @@
         });
 
         // 载入任务
-        grunt.loadNpmTasks('grunt-pandoc');
+        grunt.loadNpmTasks('grunt-pandoc-ppt');
 
         // 声明别名
         grunt.registerTask('default', ['pandoc']);
@@ -83,6 +84,8 @@
     ```
     grunt
     ```
+
+    然后开始愉快的写 PPT 吧 :D
 
 
 ## 配置参数

@@ -1,5 +1,5 @@
 /*
- * grunt-pandoc
+ * grunt-pandoc-ppt
  * https://github.com/laoshu133
  *
  * Licensed under the MIT license.
